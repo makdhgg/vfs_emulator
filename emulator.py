@@ -159,7 +159,8 @@ class VFSEmulator:
             self.print_output(f"ls: вывод содержимого директории '{self.current_directory}'")
             if args:
                 self.print_output(f"Аргументы: {' '.join(args)}")
-            self.print_output("file1.txt  file2.txt  directory/  document.pdf")
+            else:
+                self.print_output("file1.txt  file2.txt  directory/  document.pdf")
 
         elif command == "cd":
             # Команда-заглушка cd
